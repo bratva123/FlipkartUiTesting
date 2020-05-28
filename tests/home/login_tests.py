@@ -5,6 +5,8 @@ from base.conftest import oneTimeSetUp
 
 class LoginTests(unittest.TestCase):
 
+    email = "9931145329"
+    password = "nishi@1234"
     def setUp(self):
         self.driver = oneTimeSetUp()
         # print()
@@ -12,16 +14,20 @@ class LoginTests(unittest.TestCase):
 
 
     #
-    @pytest.mark.run(order=2)
+    @pytest.mark.run(order=3)
     def test_validLogin(self):
-        warnings.catch_warnings
-        self.lp.login("test@email.com", "abcabc")
+        self.lp.login(self.email, self.password)
         result = self.lp.verifyLoginSuccessful()
         assert result == True
 
-    @pytest.mark.run(order=1)
+    @pytest.mark.run(order=2)
     def test_invalidLogin(self):
-        warnings.catch_warnings
-        self.lp.login("test@email.com", "abcabcabc")
+        self.lp.login(self.email, "96623978")
         result = self.lp.verifyLoginFailed()
+        assert result == True
+
+    @pytest.mark.run(order=1)
+    def test_emptyField(self):
+        self.lp.login()
+        result = self.lp.verifyEmptyField()
         assert result == True

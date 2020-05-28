@@ -1,20 +1,30 @@
-05/26/2020 08:17:36 PM: INFO: Element found with locator: //a[contains(text(),'Login')] and  locatorType: xpath
-05/26/2020 08:17:36 PM: INFO: Clicked on element with locator: //a[contains(text(),'Login')] locatorType: xpath
-05/26/2020 08:17:46 PM: INFO: Element found with locator: //input[@id='user_email'] and  locatorType: xpath
-05/26/2020 08:17:46 PM: INFO: Sent data on element with locator: //input[@id='user_email'] locatorType: xpath
-05/26/2020 08:17:46 PM: INFO: Element found with locator: //input[@id = 'user_password'] and  locatorType: xpath
-05/26/2020 08:17:46 PM: INFO: Sent data on element with locator: //input[@id = 'user_password'] locatorType: xpath
-05/26/2020 08:17:46 PM: INFO: Element found with locator: commit and  locatorType: name
-05/26/2020 08:17:49 PM: INFO: Clicked on element with locator: commit locatorType: name
-05/26/2020 08:17:49 PM: INFO: Element found with locator: //div[contains(text(),'Invalid email or password.')] and  locatorType: xpath
-05/26/2020 08:17:49 PM: INFO: Element Found
-05/26/2020 08:17:58 PM: INFO: Element found with locator: //a[contains(text(),'Login')] and  locatorType: xpath
-05/26/2020 08:17:58 PM: INFO: Clicked on element with locator: //a[contains(text(),'Login')] locatorType: xpath
-05/26/2020 08:18:08 PM: INFO: Element found with locator: //input[@id='user_email'] and  locatorType: xpath
-05/26/2020 08:18:08 PM: INFO: Sent data on element with locator: //input[@id='user_email'] locatorType: xpath
-05/26/2020 08:18:08 PM: INFO: Element found with locator: //input[@id = 'user_password'] and  locatorType: xpath
-05/26/2020 08:18:08 PM: INFO: Sent data on element with locator: //input[@id = 'user_password'] locatorType: xpath
-05/26/2020 08:18:08 PM: INFO: Element found with locator: commit and  locatorType: name
-05/26/2020 08:18:14 PM: INFO: Clicked on element with locator: commit locatorType: name
-05/26/2020 08:18:14 PM: INFO: Element found with locator: //a[contains(text(),'My Courses')] and  locatorType: xpath
-05/26/2020 08:18:14 PM: INFO: Element Found
+05/28/2020 12:08:22 PM: INFO: Element found with locator: //div[@class='_1XBjg- row'] and  locatorType: xpath
+05/28/2020 12:08:22 PM: INFO: Element Found
+05/28/2020 12:08:32 PM: INFO: Element found with locator: //input[@class='_2zrpKA _1dBPDZ'] and  locatorType: xpath
+05/28/2020 12:08:32 PM: INFO: Sent data on element with locator: //input[@class='_2zrpKA _1dBPDZ'] locatorType: xpath
+05/28/2020 12:08:32 PM: INFO: Element found with locator: //input[@class='_2zrpKA _3v41xv _1dBPDZ'] and  locatorType: xpath
+05/28/2020 12:08:32 PM: INFO: Sent data on element with locator: //input[@class='_2zrpKA _3v41xv _1dBPDZ'] locatorType: xpath
+05/28/2020 12:08:32 PM: INFO: Element found with locator: //span[contains(text(),'Login')]/ancestor::button and  locatorType: xpath
+05/28/2020 12:08:32 PM: INFO: Clicked on element with locator: //span[contains(text(),'Login')]/ancestor::button locatorType: xpath
+05/28/2020 12:08:32 PM: INFO: Element found with locator: //span[contains(text(),'Please enter valid Email ID/Mobile number')] and  locatorType: xpath
+05/28/2020 12:08:32 PM: INFO: Element Found
+05/28/2020 12:08:41 PM: INFO: Element found with locator: //div[@class='_1XBjg- row'] and  locatorType: xpath
+05/28/2020 12:08:41 PM: INFO: Element Found
+05/28/2020 12:08:51 PM: INFO: Element found with locator: //input[@class='_2zrpKA _1dBPDZ'] and  locatorType: xpath
+05/28/2020 12:08:51 PM: INFO: Sent data on element with locator: //input[@class='_2zrpKA _1dBPDZ'] locatorType: xpath
+05/28/2020 12:08:51 PM: INFO: Element found with locator: //input[@class='_2zrpKA _3v41xv _1dBPDZ'] and  locatorType: xpath
+05/28/2020 12:08:51 PM: INFO: Sent data on element with locator: //input[@class='_2zrpKA _3v41xv _1dBPDZ'] locatorType: xpath
+05/28/2020 12:08:51 PM: INFO: Element found with locator: //span[contains(text(),'Login')]/ancestor::button and  locatorType: xpath
+05/28/2020 12:08:51 PM: INFO: Clicked on element with locator: //span[contains(text(),'Login')]/ancestor::button locatorType: xpath
+05/28/2020 12:08:51 PM: INFO: Element found with locator: //span[contains(text(),'Your username or password is incorrect')] and  locatorType: xpath
+05/28/2020 12:08:51 PM: INFO: Element Found
+05/28/2020 12:09:00 PM: INFO: Element found with locator: //div[@class='_1XBjg- row'] and  locatorType: xpath
+05/28/2020 12:09:00 PM: INFO: Element Found
+05/28/2020 12:09:10 PM: INFO: Element found with locator: //input[@class='_2zrpKA _1dBPDZ'] and  locatorType: xpath
+05/28/2020 12:09:10 PM: INFO: Sent data on element with locator: //input[@class='_2zrpKA _1dBPDZ'] locatorType: xpath
+05/28/2020 12:09:10 PM: INFO: Element found with locator: //input[@class='_2zrpKA _3v41xv _1dBPDZ'] and  locatorType: xpath
+05/28/2020 12:09:10 PM: INFO: Sent data on element with locator: //input[@class='_2zrpKA _3v41xv _1dBPDZ'] locatorType: xpath
+05/28/2020 12:09:10 PM: INFO: Element found with locator: //span[contains(text(),'Login')]/ancestor::button and  locatorType: xpath
+05/28/2020 12:09:11 PM: INFO: Clicked on element with locator: //span[contains(text(),'Login')]/ancestor::button locatorType: xpath
+05/28/2020 12:09:12 PM: INFO: Element found with locator: //div[contains(text(),'My Account')] and  locatorType: xpath
+05/28/2020 12:09:12 PM: INFO: Element Found

@@ -13,42 +13,54 @@ class LoginPage(SeleniumDriver):
 
     # Locators
     _login_link = "Login"
-    _email_field = "//input[@id='user_email']"
-    _password_field = "//input[@id = 'user_password']"
-    _login_button = "commit"
+    _popUpLogin = "//div[@class='_1XBjg- row']"
+    _email_field = "//input[@class='_2zrpKA _1dBPDZ']"
+    _password_field = "//input[@class='_2zrpKA _3v41xv _1dBPDZ']"
+    _login_button = "//span[contains(text(),'Login')]/ancestor::button"
+    _myAccount = "//div[contains(text(),'My Account')]"
+    _wrongPswEmail = "//span[contains(text(),'Your username or password is incorrect')]"
+    _emptyField = "//span[contains(text(),'Please enter valid Email ID/Mobile number')]"
 
     def clickLoginLink(self):
         time.sleep(2)
-
         self.elementClick("//a[contains(text(),'Login')]", locatorType="xpath")
-        # print("befor login click")
-        # self.driver.find_element_by_xpath("//*[@id='navbar']/div/div/div/ul/li[2]/a").click()
-        # print("befor login click")
-
     def enterEmail(self, email):
         time.sleep(10)
-        self.sendKeys(email, "//input[@id='user_email']", locatorType="xpath")
+        self.sendKeys(email, self._email_field, locatorType="xpath")
 
     def enterPassword(self, password):
-        self.sendKeys(password, self._password_field,locatorType='xpath')
+        self.sendKeys(password, self._password_field, locatorType='xpath')
 
     def clickLoginButton(self):
-        self.elementClick(self._login_button, locatorType="name")
+        self.elementClick(self._login_button, locatorType="xpath")
 
     def login(self, email="", password=""):
-        self.clickLoginLink()
-        # time.sleep(5)
-        self.enterEmail(email)
-        self.enterPassword(password)
-        self.clickLoginButton()
+        time.sleep(5)
+        bol = self.isElementPresent(self._popUpLogin, locatorType="xpath")
+        print(bool)
+        if bool:
+            self.enterEmail(email)
+            self.enterPassword(password)
+            self.clickLoginButton()
+        else:
+            self.clickLoginLink()
+            self.enterEmail(email)
+            self.enterPassword(password)
+            self.clickLoginButton()
 
     def verifyLoginSuccessful(self):
-        result = self.isElementPresent("//a[contains(text(),'My Courses')]",
+        result = self.isElementPresent(self._myAccount,
                                        locatorType="xpath")
         return result
 
     def verifyLoginFailed(self):
-        result = self.isElementPresent("//div[contains(text(),'Invalid email or password.')]",
+        result = self.isElementPresent(self._wrongPswEmail,
+                                       locatorType="xpath")
+        return result
+
+        return result
+    def verifyEmptyField(self):
+        result = self.isElementPresent(self._emptyField,
                                        locatorType="xpath")
         return result
 
