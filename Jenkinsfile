@@ -10,16 +10,18 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing'
-                sh 'pip install pytest'
-                sh 'pip install selenium'
-                
-                sh 'python -m pytest tests/home/login_tests.py --html=reports_and_log/report.html'
+                sh 'python -m pytest tests/login_tests.py tests/searchResultTest.py  --html=reports_and_log/report.html'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying'
             }
+        }
+    }
+    post {
+        always {
+            emailext attachLog: true,attachmentsPattern: '**/reports_and_log/**.html', body: 'Hi \n Sending reports of testing', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
         }
     }
 }

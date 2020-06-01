@@ -14,8 +14,8 @@ class LoginPage(SeleniumDriver):
     # Locators
     _login_link = "Login"
     _popUpLogin = "//div[@class='_1XBjg- row']"
-    _email_field = "//input[@class='_2zrpKA _1dBPDZ']"
-    _password_field = "//input[@class='_2zrpKA _3v41xv _1dBPDZ']"
+    _email_field = "(//div[@class='Km0IJL col col-3-5']//input)[1]"
+    _password_field = "(//div[@class='Km0IJL col col-3-5']//input)[2]"
     _login_button = "//span[contains(text(),'Login')]/ancestor::button"
     _myAccount = "//div[contains(text(),'My Account')]"
     _wrongPswEmail = "//span[contains(text(),'Your username or password is incorrect')]"
@@ -35,7 +35,6 @@ class LoginPage(SeleniumDriver):
         self.elementClick(self._login_button, locatorType="xpath")
 
     def login(self, email="", password=""):
-        time.sleep(5)
         bol = self.isElementPresent(self._popUpLogin, locatorType="xpath")
         print(bool)
         if bool:
