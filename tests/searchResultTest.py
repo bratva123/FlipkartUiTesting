@@ -3,6 +3,7 @@ import pytest
 import tests.login_tests
 from pages.search.SearchPage import SearchPage
 from base.conftest import oneTimeSetUp, setUp
+import time
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
 class SearchResultTest(unittest.TestCase):
