@@ -15,14 +15,14 @@ class SearchResultTest(unittest.TestCase):
         self.sp = SearchPage(self.driver)
 
 
-    @pytest.mark.run(order=5)
+    @pytest.mark.run(order=2)
     def test_validKeyword(self):
         self.sp.search(self._keyword)
-        time.sleep(2)
+        time.sleep(3)
         result = self.sp.isThereAnyResult()
         assert result == False
 
-    @pytest.mark.run(order=4)
+    @pytest.mark.run(order=1)
     def test_invalidKeyword(self):
         self.driver.find_element_by_xpath("//button[@class='_2AkmmA _29YdH8']").click()
         self.sp.search(self._wrongKeyword)
