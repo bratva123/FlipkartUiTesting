@@ -18,6 +18,7 @@ class SearchResultTest(unittest.TestCase):
     @pytest.mark.run(order=5)
     def test_validKeyword(self):
         self.sp.search(self._keyword)
+        time.sleep(2)
         result = self.sp.isThereAnyResult()
         assert result == False
 
