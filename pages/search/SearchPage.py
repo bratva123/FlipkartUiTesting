@@ -19,11 +19,12 @@ class SearchPage(SeleniumDriver):
 
     def clickSearchButton(self):
         self.elementClick(self._searchBtn, locatorType="xpath")
+        time.sleep(5)
 
     def search(self, keywords):
         self.enterSearchKeyword(keywords)
         self.clickSearchButton()
 
     def isThereAnyResult(self):
-        result = self.isElementPresent(self._noResult, locatorType="xpath")
+        result = self.isElementPresent("//div[@class='_1VpLOp']", locatorType="xpath")
         return result
