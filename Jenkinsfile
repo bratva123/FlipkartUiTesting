@@ -21,24 +21,7 @@ pipeline {
     }
     post {
         always {
-            mail(
-        bcc: '',
-        attachLog: true,
-        attachmentsPattern: '''**/report.html''',
-        body: '''
-    		    <p>Hi \n Sending Report of Testing </p>
-                <p>${DEFAULT_CONTENT}</p>
-                <p></p>
-                <p><a href="HOST">HOST</a></p>
-        ''',
-        cc: 'lavkr0403@gmail.com',
-        charset: 'UTF-8',
-        from: '',
-        mimeType: 'text/html',
-        replyTo: '',
-        subject: "Test Reports",
-        to: "suryakantsingh890@gmail.com"
-)
+            emailext (to: 'suryakantsingh890@gmail.com', replyTo: 'lavkr0403@gmail.com', subject: "Email Report from - '${env.JOB_NAME}' ", body: readFile("flipkartUITestingJob/reports_and_log/report.html"), mimeType: 'text/html');
         }
     }
 }
