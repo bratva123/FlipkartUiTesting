@@ -21,7 +21,7 @@ pipeline {
     }
     post {
         always {
-            emailext (from: '',to: 'suryakantsingh890@gmail.com', subject: "Email Report from - '${env.JOB_NAME}' ", body: '${FILE,path="/reports_and_log/report.html"}', mimeType: 'text/html');
+            emailext attachLog: true,attachmentsPattern: '**/reports_and_log/**.html', body: 'Hi \n Sending reports of testing',to:'suryakantsing890@gmail.com', subject: 'Test'
         }
     }
 }
