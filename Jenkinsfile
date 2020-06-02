@@ -21,9 +21,17 @@ pipeline {
     }
     post {
         always {
-            emailext subject: 'test',
-                        body: '$DEFAULT_CONTENT',
-                        to: 'suryakantsingh890@gmail.com'
+            mail(
+        bcc: '',
+        body: "<p>your body</p>",
+        cc: '',
+        charset: 'UTF-8',
+        from: '',
+        mimeType: 'text/html',
+        replyTo: '',
+        subject: "your subject",
+        to: "suryakantsingh890@gmail.com"
+)
         }
     }
 }
