@@ -21,7 +21,7 @@ pipeline {
     }
     post {
         always {
-            emailext attachLog: true,attachmentsPattern: '**/reports_and_log/**.html', body: 'Hi \n Sending reports of testing', recipientProviders: [[$class: 'DevelopersRecipientProvider'], 'suryakantsingh890@gmail.com', subject: 'Test'
+            emailext attachLog: true,attachmentsPattern: '**/reports_and_log/**.html', body: 'Hi \n Sending reports of testing', recipientProviders: [[$class: 'DevelopersRecipientProvider'], 'suryakantsingh890@gmail.com'], subject: 'Test'
         }
     }
 }
