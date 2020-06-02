@@ -23,7 +23,7 @@ pipeline {
         always {
             mail(
         bcc: '',
-        attach **/reports_and_log/**.html,
+        attach **/reports_and_log/report.html,
         body: '''
     		    <p>Hi \n Sending Report of Testing </p>
                 <p>${DEFAULT_CONTENT}</p>
