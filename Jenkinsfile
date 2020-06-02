@@ -21,7 +21,7 @@ pipeline {
     }
     post {
         always {
-            emailext (to: 'suryakantsingh890@gmail.com', replyTo: 'lavkr0403@gmail.com', subject: "Email Report from - '${env.JOB_NAME}' ", body: ${FILE,path="/reports_and_log/report.html"},, mimeType: 'text/html');
+            emailext (to: 'suryakantsingh890@gmail.com', replyTo: 'lavkr0403@gmail.com', subject: "Email Report from - '${env.JOB_NAME}' ", body: '${FILE,path="/reports_and_log/report.html"}', mimeType: 'text/html');
         }
     }
 }
