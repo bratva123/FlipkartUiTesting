@@ -21,7 +21,12 @@ pipeline {
     }
     post {
         always {
-            emailext attachLog: true,attachmentsPattern: '**/reports_and_log/**.html', body: 'Hi \n Sending reports of testing', recipientProviders: [[$class: 'DevelopersRecipientProvider'], 'suryakantsingh890@gmail.com'], subject: 'Test'
+            emailext (
+                    subject: "Job '${env.JOB_NAME} ${env.BUILD_NUMBER}'",
+                    body: """<p>Check console output at <a href="${env.BUILD_URL}">${env.JOB_NAME}</a></p>""",
+                    to: "suryakantsingh890@gmail.com",
+                    from: "lavkr0403@gmail.com"
+                  )
         }
     }
 }
