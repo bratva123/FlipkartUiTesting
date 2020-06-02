@@ -23,10 +23,6 @@ pipeline {
         always {
             emailext subject: 'test',
                         body: '$DEFAULT_CONTENT',
-                        recipientProviders: [
-                            [$class: 'DevelopersRecipientProvider'],
-                            [$class: 'RequesterRecipientProvider']
-                        ], 
                         to: 'suryakantsingh890@gmail.com'
         }
     }
