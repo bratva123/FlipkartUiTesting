@@ -23,7 +23,8 @@ pipeline {
         always {
             mail(
         bcc: '',
-        @attachmentsPattern: '**/report.html',
+        attachLog: true,
+        attachmentsPattern: '''**/report.html''',
         body: '''
     		    <p>Hi \n Sending Report of Testing </p>
                 <p>${DEFAULT_CONTENT}</p>
