@@ -21,12 +21,14 @@ pipeline {
     }
     post {
         always {
-            emailext (
-                    subject: "Job '${env.JOB_NAME} ${env.BUILD_NUMBER}'",
-                    body: """<p>Check console output at <a href="${env.BUILD_URL}">${env.JOB_NAME}</a></p>""",
-                    to: "suryakantsingh890@gmail.com",
-                    from: [$class: 'DevelopersRecipientProvider']
-                  )
+            emailext subject: '$DEFAULT_SUBJECT',
+                        body: '$DEFAULT_CONTENT',
+                        recipientProviders: [
+                            [$class: 'CulpritsRecipientProvider'],
+                            [$class: 'DevelopersRecipientProvider'],
+                            [$class: 'RequesterRecipientProvider']
+                        ], 
+                        to: '$DEFAULT_RECIPIENTS'
         }
     }
 }
