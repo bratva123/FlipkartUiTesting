@@ -23,7 +23,13 @@ pipeline {
         always {
             mail(
         bcc: '',
-        body: "Hi \n Sending Report Of <p>${DEFAULT_CONTENT}</p>",
+        attach '**/reports_and_log/**.html'
+        body: '''
+    		    <p>Hi \n Sending Report of Testing </p>
+                <p>${DEFAULT_CONTENT}</p>
+                <p></p>
+                <p><a href="HOST">HOST</a></p>
+        ''',
         cc: 'lavkr0403@gmail.com',
         charset: 'UTF-8',
         from: '',
