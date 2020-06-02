@@ -21,14 +21,13 @@ pipeline {
     }
     post {
         always {
-            emailext subject: '$DEFAULT_SUBJECT',
+            emailext subject: 'test',
                         body: '$DEFAULT_CONTENT',
                         recipientProviders: [
-                            [$class: 'CulpritsRecipientProvider'],
                             [$class: 'DevelopersRecipientProvider'],
                             [$class: 'RequesterRecipientProvider']
                         ], 
-                        to: '$DEFAULT_RECIPIENTS'
+                        to: 'suryakantsingh890@gmail.com'
         }
     }
 }
