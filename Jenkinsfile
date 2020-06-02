@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing'
-                sh 'python -m pytest tests/login_tests.py tests/searchResultTest.py  --html=reports_and_log/report.html'
+                sh 'python -m pytest -s -v tests/login_tests.py tests/searchResultTest.py  --html=reports_and_log/report.html'
             }
         }
         stage('Deploy') {
