@@ -23,13 +23,13 @@ pipeline {
         always {
             mail(
         bcc: '',
-        body: "<p>your body</p>",
-        cc: '',
+        body: "Hi \n Sending Report Of <p>${DEFAULT_CONTENT}</p>",
+        cc: 'lavkr0403@gmail.com',
         charset: 'UTF-8',
         from: '',
         mimeType: 'text/html',
         replyTo: '',
-        subject: "your subject",
+        subject: "Test Reports",
         to: "suryakantsingh890@gmail.com"
 )
         }
