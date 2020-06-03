@@ -37,8 +37,8 @@ def sendMail(recieverMail="lavkr0403@gmail.com"):
     filename1 = "report.html"
     filename2 = "automation.log"
 
-    attachment1 = open("/home/global/Desktop/FlipkartUiTesting/reports_and_log/report.html", "rb")
-    attachment2 = open("/home/global/Desktop/FlipkartUiTesting/reports_and_log/automation.log", "rb")
+    attachment1 = open("./reports_and_log/report.html", "rb")
+    attachment2 = open("./reports_and_log/automation.log", "rb")
 
     # instance of MIMEBase and named as p
     p1 = MIMEBase('application', 'octet-stream')
