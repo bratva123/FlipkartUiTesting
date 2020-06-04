@@ -21,7 +21,7 @@ pipeline {
     }
     post {
         always {
-            emailext attachLog: true,attachmentsPattern: '**/reports_and_log/**.html', attachmentsPattern: '**/reports_and_log/**.log', body: 'Hi \n Sending reports of testing',to:'''lavkr0403@gmail.com''', subject: 'Test'
+            emailext attachLog: true,attachmentsPattern: '**/reports_and_log/**.html';'**/reports_and_log/**.log', body: 'Hi \n Sending reports of testing',to:'lavkr0403@gmail.com', subject: 'Test'
         }
     }
 }
