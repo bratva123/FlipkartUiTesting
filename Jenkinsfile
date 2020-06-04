@@ -19,4 +19,7 @@ pipeline {
             }
         }
     }
+    post{
+    emailext attachLog: true,attachmentsPattern: '**/reports_and_log/**.html', body: 'Hi \n Sending reports of testing',to:'suryakantsing890@gmail.com', subject: 'Test'
+    }
 }
