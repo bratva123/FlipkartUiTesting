@@ -27,5 +27,6 @@ class SearchResultTest(unittest.TestCase):
     def test_invalidKeyword(self):
         self.driver.find_element_by_xpath("//button[@class='_2AkmmA _29YdH8']").click()
         self.sp.search(self._wrongKeyword)
+        time.sleep(3)
         result = self.sp.isThereAnyResult()
         assert result == True
