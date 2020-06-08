@@ -8,13 +8,13 @@ def setUp():
     print("Running method level tearDown")
 
 
-@pytest.yield_fixture(scope="class")
+@pytest.yield_fixture(scope="session", autouse=True)
 def oneTimeSetUp(request):
         print("Running one time setUp")
 
         baseURL = "https://www.flipkart.com"
         option = webdriver.ChromeOptions()
-        option.add_argument("--headless")
+        # option.add_argument("--headless")
         option.add_argument("--no-sandbox")
         option.add_argument("--disable-dev-shm-usage")
         option.add_argument("--disable-gpu")
@@ -24,10 +24,6 @@ def oneTimeSetUp(request):
         driver.implicitly_wait(3)
         driver.get(baseURL)
         print("Running tests on FF")
-
-        if request.cls is not None:
-                request.cls.driver = driver
-
         yield driver
         driver.quit()
         print("Running one time tearDown")

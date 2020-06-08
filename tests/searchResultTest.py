@@ -6,17 +6,18 @@ import time
 from utilities.smtpMailServer import sendMail
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
-class SearchResultTest(unittest.TestCase):
+class SearchResultTest(unittest.TestCase,):
 
     _keyword = "Headphone"
     _wrongKeyword = "lkjhjhbs;fb;jsdfbdf"
 
     @pytest.fixture(autouse=True)
-    def classSetup(self, oneTimeSetUp):
+    def classSetup(self,oneTimeSetUp):
+        self.driver = oneTimeSetUp
         self.sp = SearchPage(self.driver)
 
 
-    @pytest.mark.run(order=2)
+    @pytest.mark.run(order=5)
     def test_validKeyword(self):
         self.sp.search(self._keyword)
         time.sleep(3)
@@ -24,9 +25,12 @@ class SearchResultTest(unittest.TestCase):
         assert result == False
         sendMail(recieverMail="lavkr0403@gmail.com")
 
-    @pytest.mark.run(order=1)
+    @pytest.mark.run(order=4)
     def test_invalidKeyword(self):
         self.driver.find_element_by_xpath("//button[@class='_2AkmmA _29YdH8']").click()
         self.sp.search(self._wrongKeyword)
         result = self.sp.isThereAnyResult()
         assert result == True
+
+if __name__ == '__main__':
+    unittest.main()

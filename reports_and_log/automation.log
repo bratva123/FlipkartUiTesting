@@ -1,32 +1,32 @@
-06/03/2020 11:02:23 AM: INFO: Element found with locator: //input[@class='LM6RPg'] and  locatorType: xpath
-06/03/2020 11:02:23 AM: INFO: Sent data on element with locator: //input[@class='LM6RPg'] locatorType: xpath
-06/03/2020 11:02:23 AM: INFO: Element found with locator: //button[@class='vh79eN'] and  locatorType: xpath
-06/03/2020 11:02:23 AM: INFO: Clicked on element with locator: //button[@class='vh79eN'] locatorType: xpath
-06/03/2020 11:02:28 AM: INFO: Element found with locator: //div[@class='_1VpLOp'] and  locatorType: xpath
-06/03/2020 11:02:28 AM: INFO: Element Found
-06/03/2020 11:02:29 AM: INFO: Element found with locator: //input[@class='LM6RPg'] and  locatorType: xpath
-06/03/2020 11:02:29 AM: INFO: Sent data on element with locator: //input[@class='LM6RPg'] locatorType: xpath
-06/03/2020 11:02:29 AM: INFO: Element found with locator: //button[@class='vh79eN'] and  locatorType: xpath
-06/03/2020 11:02:29 AM: INFO: Clicked on element with locator: //button[@class='vh79eN'] locatorType: xpath
-06/03/2020 11:02:40 AM: INFO: Element not found with locator: //div[@class='_1VpLOp'] and  locatorType: xpath
-06/03/2020 11:02:40 AM: INFO: Element not found
+06/08/2020 10:39:16 AM: INFO: Element found with locator: //input[@class='LM6RPg'] and  locatorType: xpath
+06/08/2020 10:39:17 AM: INFO: Sent data on element with locator: //input[@class='LM6RPg'] locatorType: xpath
+06/08/2020 10:39:17 AM: INFO: Element found with locator: //button[@class='vh79eN'] and  locatorType: xpath
+06/08/2020 10:39:17 AM: INFO: Clicked on element with locator: //button[@class='vh79eN'] locatorType: xpath
+06/08/2020 10:39:22 AM: INFO: Element found with locator: //div[@class='_1VpLOp'] and  locatorType: xpath
+06/08/2020 10:39:22 AM: INFO: Element Found
+06/08/2020 10:39:22 AM: INFO: Element found with locator: //input[@class='LM6RPg'] and  locatorType: xpath
+06/08/2020 10:39:22 AM: INFO: Sent data on element with locator: //input[@class='LM6RPg'] locatorType: xpath
+06/08/2020 10:39:22 AM: INFO: Element found with locator: //button[@class='vh79eN'] and  locatorType: xpath
+06/08/2020 10:39:22 AM: INFO: Clicked on element with locator: //button[@class='vh79eN'] locatorType: xpath
+06/08/2020 10:39:33 AM: INFO: Element not found with locator: //div[@class='_1VpLOp'] and  locatorType: xpath
+06/08/2020 10:39:33 AM: INFO: Element not found
 ound with locator: //div[@class='_1XBjg- row'] and  locatorType: xpath
-06/03/2020 11:01:58 AM: INFO: Element Found
-06/03/2020 11:02:08 AM: INFO: Element found with locator: (//div[@class='Km0IJL col col-3-5']//input)[1] and  locatorType: xpath
-06/03/2020 11:02:08 AM: INFO: Sent data on element with locator: (//div[@class='Km0IJL col col-3-5']//input)[1] locatorType: xpath
-06/03/2020 11:02:08 AM: INFO: Element found with locator: (//div[@class='Km0IJL col col-3-5']//input)[2] and  locatorType: xpath
-06/03/2020 11:02:08 AM: INFO: Sent data on element with locator: (//div[@class='Km0IJL col col-3-5']//input)[2] locatorType: xpath
-06/03/2020 11:02:08 AM: INFO: Element found with locator: //span[contains(text(),'Login')]/ancestor::button and  locatorType: xpath
-06/03/2020 11:02:08 AM: INFO: Clicked on element with locator: //span[contains(text(),'Login')]/ancestor::button locatorType: xpath
-06/03/2020 11:02:08 AM: INFO: Element found with locator: //span[contains(text(),'Your username or password is incorrect')] and  locatorType: xpath
-06/03/2020 11:02:08 AM: INFO: Element Found
-06/03/2020 11:02:08 AM: INFO: Element found with locator: //div[@class='_1XBjg- row'] and  locatorType: xpath
-06/03/2020 11:02:08 AM: INFO: Element Found
-06/03/2020 11:02:18 AM: INFO: Element found with locator: (//div[@class='Km0IJL col col-3-5']//input)[1] and  locatorType: xpath
-06/03/2020 11:02:18 AM: INFO: Sent data on element with locator: (//div[@class='Km0IJL col col-3-5']//input)[1] locatorType: xpath
-06/03/2020 11:02:18 AM: INFO: Element found with locator: (//div[@class='Km0IJL col col-3-5']//input)[2] and  locatorType: xpath
-06/03/2020 11:02:18 AM: INFO: Sent data on element with locator: (//div[@class='Km0IJL col col-3-5']//input)[2] locatorType: xpath
-06/03/2020 11:02:18 AM: INFO: Element found with locator: //span[contains(text(),'Login')]/ancestor::button and  locatorType: xpath
-06/03/2020 11:02:18 AM: INFO: Clicked on element with locator: //span[contains(text(),'Login')]/ancestor::button locatorType: xpath
-06/03/2020 11:02:20 AM: INFO: Element found with locator: //div[contains(text(),'My Account')] and  locatorType: xpath
-06/03/2020 11:02:20 AM: INFO: Element Found
+06/08/2020 10:38:51 AM: INFO: Element Found
+06/08/2020 10:39:01 AM: INFO: Element found with locator: (//div[@class='Km0IJL col col-3-5']//input)[1] and  locatorType: xpath
+06/08/2020 10:39:01 AM: INFO: Sent data on element with locator: (//div[@class='Km0IJL col col-3-5']//input)[1] locatorType: xpath
+06/08/2020 10:39:01 AM: INFO: Element found with locator: (//div[@class='Km0IJL col col-3-5']//input)[2] and  locatorType: xpath
+06/08/2020 10:39:02 AM: INFO: Sent data on element with locator: (//div[@class='Km0IJL col col-3-5']//input)[2] locatorType: xpath
+06/08/2020 10:39:02 AM: INFO: Element found with locator: //span[contains(text(),'Login')]/ancestor::button and  locatorType: xpath
+06/08/2020 10:39:02 AM: INFO: Clicked on element with locator: //span[contains(text(),'Login')]/ancestor::button locatorType: xpath
+06/08/2020 10:39:02 AM: INFO: Element found with locator: //span[contains(text(),'Your username or password is incorrect')] and  locatorType: xpath
+06/08/2020 10:39:02 AM: INFO: Element Found
+06/08/2020 10:39:02 AM: INFO: Element found with locator: //div[@class='_1XBjg- row'] and  locatorType: xpath
+06/08/2020 10:39:02 AM: INFO: Element Found
+06/08/2020 10:39:12 AM: INFO: Element found with locator: (//div[@class='Km0IJL col col-3-5']//input)[1] and  locatorType: xpath
+06/08/2020 10:39:12 AM: INFO: Sent data on element with locator: (//div[@class='Km0IJL col col-3-5']//input)[1] locatorType: xpath
+06/08/2020 10:39:12 AM: INFO: Element found with locator: (//div[@class='Km0IJL col col-3-5']//input)[2] and  locatorType: xpath
+06/08/2020 10:39:12 AM: INFO: Sent data on element with locator: (//div[@class='Km0IJL col col-3-5']//input)[2] locatorType: xpath
+06/08/2020 10:39:12 AM: INFO: Element found with locator: //span[contains(text(),'Login')]/ancestor::button and  locatorType: xpath
+06/08/2020 10:39:12 AM: INFO: Clicked on element with locator: //span[contains(text(),'Login')]/ancestor::button locatorType: xpath
+06/08/2020 10:39:14 AM: INFO: Element found with locator: //div[contains(text(),'My Account')] and  locatorType: xpath
+06/08/2020 10:39:14 AM: INFO: Element Found
