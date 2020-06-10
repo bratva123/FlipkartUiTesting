@@ -18,16 +18,6 @@ pipeline {
         }
     }
         
-        stage('CheckoutModule2') {
-        steps {
-            sh 'mkdir -p Module2'
-            dir("Module1")
-            {
-                git branch: "master",
-                url: 'https://github.com/bratva123/Dummy.git'
-            }
-        }
-    }
         stage('Test') {
             steps {
                 echo 'Testing'
