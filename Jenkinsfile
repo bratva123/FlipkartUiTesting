@@ -13,7 +13,7 @@ pipeline {
             dir("Module1")
             {
                 git branch: "master",
-                url: 'https://github.com/bratva123/SeleniumWithPython.git'
+                url: 'https://github.com/bratva123/Dummy.git'
             }
         }
     }
