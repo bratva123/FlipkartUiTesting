@@ -2,6 +2,8 @@ from pages.home.login_page import LoginPage
 import unittest
 import pytest
 from base.conftest import oneTimeSetUp, setUp
+from pages.search.SearchPage import SearchPage
+import time
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
 class LoginTests(unittest.TestCase):
