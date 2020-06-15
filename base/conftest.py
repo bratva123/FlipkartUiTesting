@@ -8,7 +8,7 @@ def setUp():
     print("Running method level tearDown")
 
 
-@pytest.yield_fixture(scope="session", autouse=True)
+@pytest.yield_fixture(scope="module", autouse=True)
 def oneTimeSetUp(request):
         print("Running one time setUp")
 
