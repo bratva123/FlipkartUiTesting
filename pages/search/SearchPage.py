@@ -12,7 +12,6 @@ class SearchPage(SeleniumDriver):
 
     _searchField = "//input[@class='LM6RPg']"
     _searchBtn = "//button[@class='vh79eN']"
-    _noResult = "//div[contains(text(),'Sorry, no results found!')]"
 
     def enterSearchKeyword(self, keyword):
         self.sendKeys(keyword, self._searchField, locatorType="xpath")
