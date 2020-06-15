@@ -8,7 +8,7 @@ def setUp():
     print("Running method level tearDown")
 
 
-@pytest.yield_fixture(scope="class")
+@pytest.yield_fixture(scope="session", autouse=True)
 def oneTimeSetUp(request):
         print("Running one time setUp")
 
@@ -24,10 +24,6 @@ def oneTimeSetUp(request):
         driver.implicitly_wait(3)
         driver.get(baseURL)
         print("Running tests on FF")
-
-        if request.cls is not None:
-                request.cls.driver = driver
-
         yield driver
         driver.quit()
         print("Running one time tearDown")

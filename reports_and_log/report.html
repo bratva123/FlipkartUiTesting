@@ -243,24 +243,24 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 28-May-2020 at 14:11:53 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <p>Report generated on 08-Jun-2020 at 10:39:37 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
         <td>Packages</td>
-        <td>{"pluggy": "0.13.1", "py": "1.8.1", "pytest": "5.4.2"}</td></tr>
+        <td>{"pluggy": "0.13.1", "py": "1.8.1", "pytest": "5.4.3"}</td></tr>
       <tr>
         <td>Platform</td>
         <td>Linux-4.15.0-101-generic-x86_64-with-Ubuntu-18.04-bionic</td></tr>
       <tr>
         <td>Plugins</td>
-        <td>{"html": "2.1.1", "metadata": "1.9.0"}</td></tr>
+        <td>{"cov": "2.9.0", "html": "2.1.1", "metadata": "1.9.0"}</td></tr>
       <tr>
         <td>Python</td>
         <td>3.6.9</td></tr></table>
     <h2>Summary</h2>
-    <p>2 tests ran in 15.91 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>5 tests ran in 58.55 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">5 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -271,29 +271,85 @@ function filter_table(elem) {
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">tests/searchResultTest.py::SearchResultTest::test_invalidKeyword</td>
-          <td class="col-duration">11.03</td>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/loginTest.py::LoginTests::test_emptyField</td>
+          <td class="col-duration">10.36</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;tests.searchResultTest.SearchResultTest testMethod=test_invalidKeyword&gt;<br/><br/>    @pytest.mark.run(order=1)<br/>    def test_invalidKeyword(self):<br/>        self.sp.enterSearchKeyword(self._wrongKeyword)<br/>        result = self.sp.isThereAnyResult()<br/>&gt;       assert result == True<br/><span class="error">E       AssertionError: assert False == True</span><br/><br/>tests/searchResultTest.py:25: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>Running tests on chrome
-<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m SearchPage:selenium_driver.py:42 Element found with locator: //input[@class=&#x27;LM6RPg&#x27;] and  locatorType: xpath
-[32mINFO    [0m SearchPage:selenium_driver.py:65 Sent data on element with locator: //input[@class=&#x27;LM6RPg&#x27;] locatorType: xpath
-[32mINFO    [0m SearchPage:selenium_driver.py:45 Element not found with locator: //div[contains(text(),&#x27;Sorry, no results found!&#x27;)] and  locatorType: xpath
-[32mINFO    [0m SearchPage:selenium_driver.py:78 Element not found<br/></div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m LoginPage:selenium_driver.py:42 Element found with locator: //div[@class=&#x27;_1XBjg- row&#x27;] and  locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:76 Element Found
+[32mINFO    [0m LoginPage:selenium_driver.py:42 Element found with locator: (//div[@class=&#x27;Km0IJL col col-3-5&#x27;]//input)[1] and  locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:66 Sent data on element with locator: (//div[@class=&#x27;Km0IJL col col-3-5&#x27;]//input)[1] locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:42 Element found with locator: (//div[@class=&#x27;Km0IJL col col-3-5&#x27;]//input)[2] and  locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:66 Sent data on element with locator: (//div[@class=&#x27;Km0IJL col col-3-5&#x27;]//input)[2] locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:42 Element found with locator: //span[contains(text(),&#x27;Login&#x27;)]/ancestor::button and  locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:54 Clicked on element with locator: //span[contains(text(),&#x27;Login&#x27;)]/ancestor::button locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:42 Element found with locator: //span[contains(text(),&#x27;Please enter valid Email ID/Mobile number&#x27;)] and  locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:76 Element Found<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/loginTest.py::LoginTests::test_invalidLogin</td>
+          <td class="col-duration">10.53</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m LoginPage:selenium_driver.py:42 Element found with locator: //div[@class=&#x27;_1XBjg- row&#x27;] and  locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:76 Element Found
+[32mINFO    [0m LoginPage:selenium_driver.py:42 Element found with locator: (//div[@class=&#x27;Km0IJL col col-3-5&#x27;]//input)[1] and  locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:66 Sent data on element with locator: (//div[@class=&#x27;Km0IJL col col-3-5&#x27;]//input)[1] locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:42 Element found with locator: (//div[@class=&#x27;Km0IJL col col-3-5&#x27;]//input)[2] and  locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:66 Sent data on element with locator: (//div[@class=&#x27;Km0IJL col col-3-5&#x27;]//input)[2] locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:42 Element found with locator: //span[contains(text(),&#x27;Login&#x27;)]/ancestor::button and  locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:54 Clicked on element with locator: //span[contains(text(),&#x27;Login&#x27;)]/ancestor::button locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:42 Element found with locator: //span[contains(text(),&#x27;Your username or password is incorrect&#x27;)] and  locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:76 Element Found<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/loginTest.py::LoginTests::test_validLogin</td>
+          <td class="col-duration">11.72</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m LoginPage:selenium_driver.py:42 Element found with locator: //div[@class=&#x27;_1XBjg- row&#x27;] and  locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:76 Element Found
+[32mINFO    [0m LoginPage:selenium_driver.py:42 Element found with locator: (//div[@class=&#x27;Km0IJL col col-3-5&#x27;]//input)[1] and  locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:66 Sent data on element with locator: (//div[@class=&#x27;Km0IJL col col-3-5&#x27;]//input)[1] locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:42 Element found with locator: (//div[@class=&#x27;Km0IJL col col-3-5&#x27;]//input)[2] and  locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:66 Sent data on element with locator: (//div[@class=&#x27;Km0IJL col col-3-5&#x27;]//input)[2] locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:42 Element found with locator: //span[contains(text(),&#x27;Login&#x27;)]/ancestor::button and  locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:54 Clicked on element with locator: //span[contains(text(),&#x27;Login&#x27;)]/ancestor::button locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:42 Element found with locator: //div[contains(text(),&#x27;My Account&#x27;)] and  locatorType: xpath
+[32mINFO    [0m LoginPage:selenium_driver.py:76 Element Found<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/searchResultTest.py::SearchResultTest::test_invalidKeyword</td>
+          <td class="col-duration">5.37</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m SearchPage:selenium_driver.py:42 Element found with locator: //input[@class=&#x27;LM6RPg&#x27;] and  locatorType: xpath
+[32mINFO    [0m SearchPage:selenium_driver.py:66 Sent data on element with locator: //input[@class=&#x27;LM6RPg&#x27;] locatorType: xpath
+[32mINFO    [0m SearchPage:selenium_driver.py:42 Element found with locator: //button[@class=&#x27;vh79eN&#x27;] and  locatorType: xpath
+[32mINFO    [0m SearchPage:selenium_driver.py:54 Clicked on element with locator: //button[@class=&#x27;vh79eN&#x27;] locatorType: xpath
+[32mINFO    [0m SearchPage:selenium_driver.py:42 Element found with locator: //div[@class=&#x27;_1VpLOp&#x27;] and  locatorType: xpath
+[32mINFO    [0m SearchPage:selenium_driver.py:76 Element Found<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/searchResultTest.py::SearchResultTest::test_validKeyword</td>
-          <td class="col-duration">3.71</td>
+          <td class="col-duration">15.39</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Running tests on chrome
-<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m SearchPage:selenium_driver.py:42 Element found with locator: //input[@class=&#x27;LM6RPg&#x27;] and  locatorType: xpath
-[32mINFO    [0m SearchPage:selenium_driver.py:65 Sent data on element with locator: //input[@class=&#x27;LM6RPg&#x27;] locatorType: xpath
-[32mINFO    [0m SearchPage:selenium_driver.py:42 Element found with locator: //div[contains(text(),&#x27;Sorry, no results found!&#x27;)] and  locatorType: xpath
-[32mINFO    [0m SearchPage:selenium_driver.py:78 Element not found<br/></div></td></tr></tbody></table></body></html>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m SearchPage:selenium_driver.py:42 Element found with locator: //input[@class=&#x27;LM6RPg&#x27;] and  locatorType: xpath
+[32mINFO    [0m SearchPage:selenium_driver.py:66 Sent data on element with locator: //input[@class=&#x27;LM6RPg&#x27;] locatorType: xpath
+[32mINFO    [0m SearchPage:selenium_driver.py:42 Element found with locator: //button[@class=&#x27;vh79eN&#x27;] and  locatorType: xpath
+[32mINFO    [0m SearchPage:selenium_driver.py:54 Clicked on element with locator: //button[@class=&#x27;vh79eN&#x27;] locatorType: xpath
+[32mINFO    [0m SearchPage:selenium_driver.py:45 Element not found with locator: //div[@class=&#x27;_1VpLOp&#x27;] and  locatorType: xpath
+[32mINFO    [0m SearchPage:selenium_driver.py:79 Element not found<br/></div></td></tr></tbody></table></body></html>

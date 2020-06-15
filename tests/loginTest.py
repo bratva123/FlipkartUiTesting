@@ -13,13 +13,13 @@ class LoginTests(unittest.TestCase):
     def classSetup(self, oneTimeSetUp):
         self.lp = LoginPage(self.driver)
 
-    @pytest.mark.run(order=1)
+    @pytest.mark.run(order=3)
     def test_validLogin(self):
         self.lp.login(self.email, self.password)
         result = self.lp.verifyLoginSuccessful()
         assert result == True
 
-    @pytest.mark.run(order=1)
+    @pytest.mark.run(order=2)
     def test_invalidLogin(self):
         self.lp.login(self.email, "96623978")
         result = self.lp.verifyLoginFailed()
@@ -30,3 +30,6 @@ class LoginTests(unittest.TestCase):
         self.lp.login("","")
         result = self.lp.verifyEmptyField()
         assert result == True
+
+if __name__ == '__main__':
+    unittest.main()

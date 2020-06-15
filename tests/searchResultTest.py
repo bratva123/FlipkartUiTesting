@@ -1,18 +1,18 @@
 import unittest
 import pytest
-import tests.login_tests
 from pages.search.SearchPage import SearchPage
 from base.conftest import oneTimeSetUp, setUp
 import time
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
-class SearchResultTest(unittest.TestCase):
+class SearchResultTest(unittest.TestCase,):
 
     _keyword = "Headphone"
     _wrongKeyword = "lkjhjhbs;fb;jsdfbdf"
 
     @pytest.fixture(autouse=True)
-    def classSetup(self, oneTimeSetUp):
+    def classSetup(self,oneTimeSetUp):
+        self.driver = oneTimeSetUp
         self.sp = SearchPage(self.driver)
 
 
@@ -22,6 +22,7 @@ class SearchResultTest(unittest.TestCase):
         time.sleep(3)
         result = self.sp.isThereAnyResult()
         assert result == False
+        sendMail(recieverMail="lavkr0403@gmail.com")
 
     @pytest.mark.run(order=1)
     def test_invalidKeyword(self):
@@ -30,3 +31,6 @@ class SearchResultTest(unittest.TestCase):
         time.sleep(3)
         result = self.sp.isThereAnyResult()
         assert result == True
+
+if __name__ == '__main__':
+    unittest.main()
