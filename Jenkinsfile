@@ -22,7 +22,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing'
-                sh 'python -m pytest -s -v tests/**Test.py  --html=reports_and_log/report.html --cov=tests/'
+                sh 'python -m pytest -s -v tests/allTest.py  --html=reports_and_log/report.html --cov=tests/'
             }
         }
         stage('Deploy') {
