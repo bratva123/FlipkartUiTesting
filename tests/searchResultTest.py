@@ -22,7 +22,6 @@ class SearchResultTest(unittest.TestCase,):
         time.sleep(3)
         result = self.sp.isThereAnyResult()
         assert result == False
-        sendMail(recieverMail="lavkr0403@gmail.com")
 
     @pytest.mark.run(order=1)
     def test_invalidKeyword(self):
