@@ -11,6 +11,7 @@ class LoginTests(unittest.TestCase):
 
     @pytest.fixture(autouse=True)
     def classSetup(self, oneTimeSetUp):
+        self.driver = oneTimeSetUp
         self.lp = LoginPage(self.driver)
 
     @pytest.mark.run(order=3)
