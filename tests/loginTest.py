@@ -10,17 +10,14 @@ class LoginTests(unittest.TestCase):
     password = "nishi@1234"
 
     @pytest.fixture(autouse=True)
-    def classSetup(self,oneTimeSetUp):
-        self.driver = oneTimeSetUp
+    def classSetup(self, oneTimeSetUp):
         self.lp = LoginPage(self.driver)
-
 
     @pytest.mark.run(order=3)
     def test_validLogin(self):
         self.lp.login(self.email, self.password)
         result = self.lp.verifyLoginSuccessful()
         assert result == True
-
 
     @pytest.mark.run(order=2)
     def test_invalidLogin(self):

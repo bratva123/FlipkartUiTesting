@@ -7,10 +7,22 @@ pipeline {
                 sh 'python --version'
             }
         }
+        stage('CheckoutModule1') {
+        steps {
+            sh 'mkdir -p Module1'
+            dir("Module1")
+            {
+                git branch: "master",
+                url: 'https://github.com/bratva123/SeleniumWithPython.git'
+            }
+        }
+    }
+        
+        
         stage('Test') {
             steps {
                 echo 'Testing'
-                sh 'python -m pytest -s -v tests/login_tests.py tests/searchResultTest.py  --html=reports_and_log/report.html'
+                sh 'python -m pytest -s -v tests/**Test.py  --html=reports_and_log/report.html --cov=tests/'
             }
         }
         stage('Deploy') {
