@@ -7,7 +7,7 @@ from base.conftest import oneTimeSetUp, setUp
 class LoginTests(unittest.TestCase):
 
     email = "9931145329"
-    password = "nishi@1234"
+    password = "Nishi@1234"
 
     @pytest.fixture(autouse=True)
     def classSetup(self, oneTimeSetUp):
